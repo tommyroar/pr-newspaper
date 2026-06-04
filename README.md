@@ -10,6 +10,9 @@ on:
     types: [opened, edited, reopened]
 jobs:
   newspaper:
+    permissions:        # a reusable can't request more scope than its caller holds
+      contents: read
+      pull-requests: read
     uses: tommyroar/pr-newspaper/.github/workflows/validate.yml@main
 ```
 
