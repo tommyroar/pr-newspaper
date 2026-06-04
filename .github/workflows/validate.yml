@@ -7,7 +7,7 @@ name: validate-pr-newspaper (reusable)
 # `pull_request` event context, so no checkout of the caller is needed.
 
 on:
-  workflow_call: {}
+  workflow_call:
 
 permissions:
   contents: read
